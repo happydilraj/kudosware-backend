@@ -43,7 +43,6 @@ app.post("/register", async (req, resp) => {
         const user = new User(req.body);
         let result = await user.save();
         result = result.toObject();
-        resp.send("dilraj")
         if (result) {
             // delete result.password;
             resp.send(req.body);
