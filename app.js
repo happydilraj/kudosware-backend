@@ -33,6 +33,10 @@ const User = mongoose.model('userdetail', userSchema);
 // const user = new User({ firstName: 'dilraj', lastName: 'singh', mobileNumber: '8890049370', email: 'happydilraj1022@gmail.com', address: 'alipura', institute: 'IIT BHU' });
 
 // user.save();
+app.get("/", (req,res) => {
+    res.send("dilraj")
+    console.log("dilraj")
+})
 
 app.post("/register", async (req, resp) => {
     try {
